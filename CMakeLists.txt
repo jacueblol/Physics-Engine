@@ -1,23 +1,22 @@
 cmake_minimum_required(VERSION 3.16)
-project(PhysicsEngine LANGUAGES CXX C)
+project(GravitySim)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(engine
-    src/main.cpp
-    external/glad/src/glad.c
+find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
+
+add_executable(GravitySim 
+  src/main.cpp
+  src/Simulation.cpp
 )
 
-target_include_directories(engine PRIVATE
-    external/glad/include
+target_link_libraries(GravitySim
+    SFML::Graphics
+    SFML::Window
+    SFML::System
 )
 
-find_package(glfw3 REQUIRED)
+include(CTest)
+enable_testing()
 
-target_link_libraries(engine PRIVATE glfw)
-
-# Linux extra libs
-if(UNIX AND NOT APPLE)
-    target_link_libraries(engine PRIVATE dl pthread)
-endif()

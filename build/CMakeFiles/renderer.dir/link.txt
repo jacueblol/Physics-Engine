@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/renderer.dir/link.d CMakeFiles/renderer.dir/src/main.cpp.o -o renderer  -lglfw -lglad::glad /usr/lib/libGLX.so /usr/lib/libOpenGL.so
