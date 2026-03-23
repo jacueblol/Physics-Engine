@@ -1,7 +1,6 @@
 // Simulation.cpp
 #include "Simulation.h"
 #include "Body.h"
-#include <cmath>
 
 // ---- Constructor --------------------------------------------------------
 

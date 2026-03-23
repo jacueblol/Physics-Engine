@@ -28,6 +28,10 @@ int main() {
   mars.pos = {1.524 * Renderer::AU, 0};
   mars.vel = {0, std::sqrt(Simulation::G * sun.mass / (1.524 * Renderer::AU))};
 
+  sim.bodies.push_back(sun);
+  sim.bodies.push_back(earth);
+  sim.bodies.push_back(mars);
+
 
   while (renderer.window.isOpen()) {
     while (const auto event = renderer.window.pollEvent()) {
