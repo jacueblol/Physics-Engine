@@ -11,15 +11,20 @@
 class Renderer {
 public:
   /**
- * @brief One Astronomical Unit in meters — the real-world distance from
- *        Earth to the Sun (1.496e11 m). Used to set up initial body
- *        positions in main.cpp so coordinates match physical reality.
- */
+   * @brief One Astronomical Unit in meters — the real-world distance from
+   *        Earth to the Sun (1.496e11 m). Used to set up initial body
+   *        positions in main.cpp so coordinates match physical reality.
+   */
 
   static constexpr double AU = 1.496e11;
   /**
-   * @brief 
-   * 
+   * @brief Pixels per meter. Converts simulation coordinates (meters) into
+   *        screen coordinates (pixels) for rendering.
+   *
+   *        600.0 / AU means "1 AU fits in 600 pixels", so the Earth's orbit
+   *        spans ~600px from the Sun. Increase to zoom in, decrease to zoom
+   * out. Used in toScreen() as: screen_x = (world_x - camera.x) * zoom +
+   * centerX
    */
   static constexpr double zoom = 600.0 / AU;
 
@@ -56,7 +61,8 @@ public:
   }
 
   void handleResized(const sf::Event::Resized *isResized) {
-    if (!isResized) return;
+    if (!isResized)
+      return;
     const auto size = isResized->size;
     sf::FloatRect visibleArea({0.f, 0.f}, {(float)size.x, (float)size.y});
     window.setView(sf::View(visibleArea));
