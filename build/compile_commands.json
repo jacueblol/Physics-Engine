@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/jacobh/Documents/Physics-Engine/build",
+  "command": "/usr/bin/c++  -I/home/jacobh/Documents/Physics-Engine/external/glad/include -g -std=gnu++17 -o CMakeFiles/engine.dir/src/main.cpp.o -c /home/jacobh/Documents/Physics-Engine/src/main.cpp",
+  "file": "/home/jacobh/Documents/Physics-Engine/src/main.cpp",
+  "output": "CMakeFiles/engine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/jacobh/Documents/Physics-Engine/build",
+  "command": "/usr/bin/cc  -I/home/jacobh/Documents/Physics-Engine/external/glad/include -g -o CMakeFiles/engine.dir/external/glad/src/glad.c.o -c /home/jacobh/Documents/Physics-Engine/external/glad/src/glad.c",
+  "file": "/home/jacobh/Documents/Physics-Engine/external/glad/src/glad.c",
+  "output": "CMakeFiles/engine.dir/external/glad/src/glad.c.o"
+}
+]

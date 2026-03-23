@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/engine.dir/link.d CMakeFiles/engine.dir/src/main.cpp.o CMakeFiles/engine.dir/external/glad/src/glad.c.o -o engine  /usr/lib/libglfw.so.3.4 -ldl -lpthread
