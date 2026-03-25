@@ -8,6 +8,7 @@
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window/Event.hpp>
 #include <cstddef>
+#include <vector>
 
 class Renderer {
 public:
@@ -33,6 +34,7 @@ public:
   // Without this the Sun is ~2.8px and planets are sub-pixel.
   // Zoom in close and bodies grow using their real physical radius.
   double visualBoost = 50.0;
+  int followIndex = -1;
 
   sf::RenderWindow window;
   Vec2 camera = {0, 0};
@@ -102,9 +104,9 @@ public:
   void drawBody(const Body &b) {
     auto winSize = window.getSize();
 
+    // Sun gets base boost, planets get 3x more to stay visible
     double boost = (b.name == "Sun") ? 30.f : visualBoost * 3.0;
-
-    float screenRadius = std::max((float)(b.radius*zoom*boost), 2.f);
+    float screenRadius = std::max((float)(b.radius * zoom * boost), 2.f);
 
     for (size_t i = 1; i < b.trail.size(); ++i) {
       auto p1 = toScreen(b.trail[i - 1], winSize);
@@ -116,12 +118,18 @@ public:
       window.draw(line, 2, sf::PrimitiveType::Lines);
     }
 
-    // circle
     sf::CircleShape circle(screenRadius);
     circle.setFillColor(b.color);
     circle.setOrigin({screenRadius, screenRadius});
     circle.setPosition(toScreen(b.pos, winSize));
     window.draw(circle);
+  }
+
+  void updateFollow(const std::vector<Body> &bodies) {
+    if (followIndex < 0 || followIndex >= bodies.size())
+      return;
+    const auto &b = bodies[followIndex];
+    camera = b.pos;
   }
 
 private:

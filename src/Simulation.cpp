@@ -38,7 +38,7 @@ void Simulation::applyGravity(Body &a, const Body &b) {
 }
 
 void Simulation::integrate(Body &b) {
-  b.vel += b.acc * dt;
-  b.pos += b.vel * dt;
+  b.vel += b.acc * (dt * timeDirection);
+  b.pos += b.vel * (dt * timeDirection);
   b.acc = {0, 0};
 }

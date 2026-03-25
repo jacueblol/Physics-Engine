@@ -11,6 +11,7 @@ public:
   static constexpr double G = 6.674e-11;
   static constexpr double dt = 3600.0;     // 1 sim-hour per step
   size_t maxTrail = 500; 
+  int timeDirection = 1; // 1=f and -1=r
 
   Simulation();
   void update(int stepsPerFrame);
