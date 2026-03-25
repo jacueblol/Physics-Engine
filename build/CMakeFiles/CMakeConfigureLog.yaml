@@ -1298,8 +1298,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y"
-      binary: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y"
+      source: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF"
+      binary: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1308,13 +1308,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y'
+        Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa215/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_fa215.dir/build.make CMakeFiles/cmTC_fa215.dir/build
-        make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y'
-        Building C object CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2db5e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_2db5e.dir/build.make CMakeFiles/cmTC_2db5e.dir/build
+        make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF'
+        Building C object CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -1322,8 +1322,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20260209 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fa215.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccaH0lQB.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2db5e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNhlJ5g.s
         GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1337,14 +1337,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: bf2fc87de31234076e243c1d6f6bc76e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/'
-         as -v --64 -o CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o /tmp/ccaH0lQB.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o /tmp/ccNhlJ5g.s
         GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_fa215
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa215.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_2db5e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2db5e.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1355,14 +1355,14 @@ events:
         gcc version 15.2.1 20260209 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa215' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa215.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqN9vtd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fa215 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2db5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2db5e.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAptfJK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2db5e /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20260209
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqN9vtd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fa215 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAptfJK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2db5e /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa215' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa215.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -o cmTC_fa215
-        make[1]: Leaving directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2db5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2db5e.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -o cmTC_2db5e
+        make[1]: Leaving directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF'
         
       exitCode: 0
   -
@@ -1397,13 +1397,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y']
+        ignore line: [Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa215/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fa215.dir/build.make CMakeFiles/cmTC_fa215.dir/build]
-        ignore line: [make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-jKc75Y']
-        ignore line: [Building C object CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2db5e/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_2db5e.dir/build.make CMakeFiles/cmTC_2db5e.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-XuIqSF']
+        ignore line: [Building C object CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1411,8 +1411,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fa215.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccaH0lQB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2db5e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccNhlJ5g.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1426,14 +1426,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: bf2fc87de31234076e243c1d6f6bc76e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o /tmp/ccaH0lQB.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o /tmp/ccNhlJ5g.s]
         ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_fa215]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa215.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_2db5e]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2db5e.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1444,13 +1444,13 @@ events:
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa215' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fa215.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqN9vtd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fa215 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2db5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2db5e.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAptfJK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2db5e /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccqN9vtd.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccAptfJK.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1465,7 +1465,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_fa215] ==> ignore
+          arg [cmTC_2db5e] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1477,7 +1477,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1492,7 +1492,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20260209]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqN9vtd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fa215 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fa215.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAptfJK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2db5e /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_2db5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1529,8 +1529,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5"
-      binary: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5"
+      source: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT"
+      binary: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1540,13 +1540,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5'
+        Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67cfa/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_67cfa.dir/build.make CMakeFiles/cmTC_67cfa.dir/build
-        make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5'
-        Building CXX object CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac6d5/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ac6d5.dir/build.make CMakeFiles/cmTC_ac6d5.dir/build
+        make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT'
+        Building CXX object CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -1554,8 +1554,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20260209 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_67cfa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccHucy9c.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ac6d5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccd1Atvq.s
         GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1572,14 +1572,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 404f410ac26da12cd6eb106b86392ad7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/'
-         as -v --64 -o CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHucy9c.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccd1Atvq.s
         GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_67cfa
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67cfa.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_ac6d5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac6d5.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1590,14 +1590,14 @@ events:
         gcc version 15.2.1 20260209 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67cfa.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRxZKjw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67cfa /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac6d5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ac6d5.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUECbYC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ac6d5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20260209
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRxZKjw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67cfa /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUECbYC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ac6d5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67cfa.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_67cfa
-        make[1]: Leaving directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac6d5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ac6d5.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ac6d5
+        make[1]: Leaving directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT'
         
       exitCode: 0
   -
@@ -1638,13 +1638,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5']
+        ignore line: [Change Dir: '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67cfa/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_67cfa.dir/build.make CMakeFiles/cmTC_67cfa.dir/build]
-        ignore line: [make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-nrXJy5']
-        ignore line: [Building CXX object CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac6d5/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ac6d5.dir/build.make CMakeFiles/cmTC_ac6d5.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-sWhbHT']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1652,8 +1652,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_67cfa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccHucy9c.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ac6d5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccd1Atvq.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1670,14 +1670,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 404f410ac26da12cd6eb106b86392ad7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHucy9c.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccd1Atvq.s]
         ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_67cfa]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67cfa.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_ac6d5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac6d5.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1688,13 +1688,13 @@ events:
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67cfa' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67cfa.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRxZKjw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67cfa /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac6d5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ac6d5.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUECbYC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ac6d5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccRxZKjw.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUECbYC.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1709,7 +1709,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_67cfa] ==> ignore
+          arg [cmTC_ac6d5] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1721,7 +1721,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1732,7 +1732,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20260209]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRxZKjw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67cfa /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_67cfa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUECbYC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ac6d5 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ac6d5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1760,211 +1760,6 @@ events:
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.46
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:8 (find_package)"
-    name: "SFML"
-    components:
-      -
-        name: "graphics"
-        required: true
-        found: false
-      -
-        name: "window"
-        required: true
-        found: false
-      -
-        name: "system"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "SFMLConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "sfml-config.cmake"
-        kind: "cmake"
-    version_request:
-      version: "2.5"
-      version_complete: "2.5"
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "SFML"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.local/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.local/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cmake/SFML/SFMLConfig.cmake"
-        mode: "config"
-        reason: "insufficient_version"
-        message: "The version found is not compatible with the version requested."
-      -
-        path: "/usr/lib/cmake/SFML/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.local/share/flatpak/exports/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.local/share/flatpak/exports/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib/cmake/SFML/SFMLConfig.cmake"
-        mode: "config"
-        reason: "insufficient_version"
-        message: "The version found is not compatible with the version requested."
-      -
-        path: "/lib/cmake/SFML/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "/home/jacobh/.local/bin"
-        - "/home/jacobh/.local/bin"
-        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
-        - "/home/jacobh/.local/bin"
-        - "/home/jacobh/.local/bin"
-        - "/home/jacobh/.local/bin"
-        - "/home/jacobh/.local/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/usr/local/sbin"
-        - "/home/jacobh/.local/share/flatpak/exports/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
@@ -2153,13 +1948,140 @@ events:
       CMAKE_SYSTEM_INCLUDE_PATH:
         - "/usr/include/X11"
   -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:7 (find_package)"
+    name: "SFML"
+    components:
+      -
+        name: "Graphics"
+        required: true
+        found: false
+      -
+        name: "Window"
+        required: true
+        found: false
+      -
+        name: "System"
+        required: true
+        found: false
+    configs:
+      -
+        filename: "SFMLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "sfml-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "3"
+      version_complete: "3"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "SFML"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/jacobh/Documents/Physics-Engine/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/jacobh/.local/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/jacobh/.local/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/SFML/SFMLConfig.cmake"
+      mode: "config"
+      version: "3.0.2"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CTest.cmake:171 (find_program)"
-      - "CMakeLists.txt:17 (include)"
+      - "/usr/share/cmake/Modules/FindGit.cmake:111 (find_program)"
+      - "/usr/share/cmake/Modules/FetchContent.cmake:1884 (find_package)"
+      - "/usr/share/cmake/Modules/FetchContent.cmake:1619 (__FetchContent_populateSubbuild)"
+      - "/usr/share/cmake/Modules/FetchContent.cmake:2155:EVAL:2 (__FetchContent_doPopulation)"
+      - "/usr/share/cmake/Modules/FetchContent.cmake:2155 (cmake_language)"
+      - "/usr/share/cmake/Modules/FetchContent.cmake:2394 (__FetchContent_Populate)"
+      - "CMakeLists.txt:21 (FetchContent_MakeAvailable)"
     mode: "program"
-    variable: "GITCOMMAND"
-    description: "Path to a program."
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -2235,11 +2157,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CTest.cmake:188 (find_program)"
-      - "CMakeLists.txt:17 (include)"
-    mode: "program"
-    variable: "MEMORYCHECK_COMMAND"
-    description: "Path to the memory checking command, used for memory error detection."
+      - "build/_deps/imgui-sfml-src/cmake/FindImGui.cmake:15 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:41 (find_package)"
+    mode: "path"
+    variable: "IMGUI_INCLUDE_DIR"
+    description: "Path to a file."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -2249,12 +2171,58 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "purify"
-      - "valgrind"
-      - "boundscheck"
-      - "drmemory"
-      - "cuda-memcheck"
-      - "compute-sanitizer"
+      - "imgui.h"
+    candidate_directories:
+      - "/home/jacobh/Documents/Physics-Engine/build/_deps/imgui-src/"
+    found: "/home/jacobh/Documents/Physics-Engine/build/_deps/imgui-src/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:408 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/gl.h"
     candidate_directories:
       - "/home/jacobh/.local/bin/"
       - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
@@ -2267,192 +2235,486 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
+      - "/usr/local/include/"
       - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
+      - "/usr/include/"
       - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
+      - "/include/"
+      - "/usr/X11R6/include/"
       - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
+      - "/usr/pkg/include/"
       - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
+      - "/opt/include/"
       - "/opt/"
+      - "/usr/include/X11/"
+      - "/usr/share/doc/NVIDIA_GLX-1.0/include/"
+      - "/usr/openwin/share/include/"
+      - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/home/jacobh/.local/bin/purify"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/purify"
-      - "/usr/local/bin/purify"
-      - "/usr/bin/purify"
-      - "/usr/local/sbin/purify"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/purify"
-      - "/usr/lib/jvm/default/bin/purify"
-      - "/usr/bin/site_perl/purify"
-      - "/usr/bin/vendor_perl/purify"
-      - "/usr/bin/core_perl/purify"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/purify"
-      - "/usr/local/bin/purify"
-      - "/usr/local/sbin/purify"
-      - "/usr/local/purify"
-      - "/usr/bin/purify"
-      - "/usr/sbin/purify"
-      - "/usr/purify"
-      - "/bin/purify"
-      - "/sbin/purify"
-      - "/usr/X11R6/bin/purify"
-      - "/usr/X11R6/sbin/purify"
-      - "/usr/X11R6/purify"
-      - "/usr/pkg/bin/purify"
-      - "/usr/pkg/sbin/purify"
-      - "/usr/pkg/purify"
-      - "/opt/bin/purify"
-      - "/opt/sbin/purify"
-      - "/opt/purify"
-      - "/home/jacobh/.local/bin/valgrind"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/valgrind"
-      - "/usr/local/bin/valgrind"
-      - "/usr/bin/valgrind"
-      - "/usr/local/sbin/valgrind"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/valgrind"
-      - "/usr/lib/jvm/default/bin/valgrind"
-      - "/usr/bin/site_perl/valgrind"
-      - "/usr/bin/vendor_perl/valgrind"
-      - "/usr/bin/core_perl/valgrind"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/valgrind"
-      - "/usr/local/bin/valgrind"
-      - "/usr/local/sbin/valgrind"
-      - "/usr/local/valgrind"
-      - "/usr/bin/valgrind"
-      - "/usr/sbin/valgrind"
-      - "/usr/valgrind"
-      - "/bin/valgrind"
-      - "/sbin/valgrind"
-      - "/usr/X11R6/bin/valgrind"
-      - "/usr/X11R6/sbin/valgrind"
-      - "/usr/X11R6/valgrind"
-      - "/usr/pkg/bin/valgrind"
-      - "/usr/pkg/sbin/valgrind"
-      - "/usr/pkg/valgrind"
-      - "/opt/bin/valgrind"
-      - "/opt/sbin/valgrind"
-      - "/opt/valgrind"
-      - "/home/jacobh/.local/bin/boundscheck"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/boundscheck"
-      - "/usr/local/bin/boundscheck"
-      - "/usr/bin/boundscheck"
-      - "/usr/local/sbin/boundscheck"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/boundscheck"
-      - "/usr/lib/jvm/default/bin/boundscheck"
-      - "/usr/bin/site_perl/boundscheck"
-      - "/usr/bin/vendor_perl/boundscheck"
-      - "/usr/bin/core_perl/boundscheck"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/boundscheck"
-      - "/usr/local/bin/boundscheck"
-      - "/usr/local/sbin/boundscheck"
-      - "/usr/local/boundscheck"
-      - "/usr/bin/boundscheck"
-      - "/usr/sbin/boundscheck"
-      - "/usr/boundscheck"
-      - "/bin/boundscheck"
-      - "/sbin/boundscheck"
-      - "/usr/X11R6/bin/boundscheck"
-      - "/usr/X11R6/sbin/boundscheck"
-      - "/usr/X11R6/boundscheck"
-      - "/usr/pkg/bin/boundscheck"
-      - "/usr/pkg/sbin/boundscheck"
-      - "/usr/pkg/boundscheck"
-      - "/opt/bin/boundscheck"
-      - "/opt/sbin/boundscheck"
-      - "/opt/boundscheck"
-      - "/home/jacobh/.local/bin/drmemory"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/drmemory"
-      - "/usr/local/bin/drmemory"
-      - "/usr/bin/drmemory"
-      - "/usr/local/sbin/drmemory"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/drmemory"
-      - "/usr/lib/jvm/default/bin/drmemory"
-      - "/usr/bin/site_perl/drmemory"
-      - "/usr/bin/vendor_perl/drmemory"
-      - "/usr/bin/core_perl/drmemory"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/drmemory"
-      - "/usr/local/bin/drmemory"
-      - "/usr/local/sbin/drmemory"
-      - "/usr/local/drmemory"
-      - "/usr/bin/drmemory"
-      - "/usr/sbin/drmemory"
-      - "/usr/drmemory"
-      - "/bin/drmemory"
-      - "/sbin/drmemory"
-      - "/usr/X11R6/bin/drmemory"
-      - "/usr/X11R6/sbin/drmemory"
-      - "/usr/X11R6/drmemory"
-      - "/usr/pkg/bin/drmemory"
-      - "/usr/pkg/sbin/drmemory"
-      - "/usr/pkg/drmemory"
-      - "/opt/bin/drmemory"
-      - "/opt/sbin/drmemory"
-      - "/opt/drmemory"
-      - "/home/jacobh/.local/bin/cuda-memcheck"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/cuda-memcheck"
-      - "/usr/local/bin/cuda-memcheck"
-      - "/usr/bin/cuda-memcheck"
-      - "/usr/local/sbin/cuda-memcheck"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/cuda-memcheck"
-      - "/usr/lib/jvm/default/bin/cuda-memcheck"
-      - "/usr/bin/site_perl/cuda-memcheck"
-      - "/usr/bin/vendor_perl/cuda-memcheck"
-      - "/usr/bin/core_perl/cuda-memcheck"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/cuda-memcheck"
-      - "/usr/local/bin/cuda-memcheck"
-      - "/usr/local/sbin/cuda-memcheck"
-      - "/usr/local/cuda-memcheck"
-      - "/usr/bin/cuda-memcheck"
-      - "/usr/sbin/cuda-memcheck"
-      - "/usr/cuda-memcheck"
-      - "/bin/cuda-memcheck"
-      - "/sbin/cuda-memcheck"
-      - "/usr/X11R6/bin/cuda-memcheck"
-      - "/usr/X11R6/sbin/cuda-memcheck"
-      - "/usr/X11R6/cuda-memcheck"
-      - "/usr/pkg/bin/cuda-memcheck"
-      - "/usr/pkg/sbin/cuda-memcheck"
-      - "/usr/pkg/cuda-memcheck"
-      - "/opt/bin/cuda-memcheck"
-      - "/opt/sbin/cuda-memcheck"
-      - "/opt/cuda-memcheck"
-      - "/home/jacobh/.local/bin/compute-sanitizer"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/compute-sanitizer"
-      - "/usr/local/bin/compute-sanitizer"
-      - "/usr/bin/compute-sanitizer"
-      - "/usr/local/sbin/compute-sanitizer"
-      - "/home/jacobh/.local/share/flatpak/exports/bin/compute-sanitizer"
-      - "/usr/lib/jvm/default/bin/compute-sanitizer"
-      - "/usr/bin/site_perl/compute-sanitizer"
-      - "/usr/bin/vendor_perl/compute-sanitizer"
-      - "/usr/bin/core_perl/compute-sanitizer"
-      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/compute-sanitizer"
-      - "/usr/local/bin/compute-sanitizer"
-      - "/usr/local/sbin/compute-sanitizer"
-      - "/usr/local/compute-sanitizer"
-      - "/usr/bin/compute-sanitizer"
-      - "/usr/sbin/compute-sanitizer"
-      - "/usr/compute-sanitizer"
-      - "/bin/compute-sanitizer"
-      - "/sbin/compute-sanitizer"
-      - "/usr/X11R6/bin/compute-sanitizer"
-      - "/usr/X11R6/sbin/compute-sanitizer"
-      - "/usr/X11R6/compute-sanitizer"
-      - "/usr/pkg/bin/compute-sanitizer"
-      - "/usr/pkg/sbin/compute-sanitizer"
-      - "/usr/pkg/compute-sanitizer"
-      - "/opt/bin/compute-sanitizer"
-      - "/opt/sbin/compute-sanitizer"
-      - "/opt/compute-sanitizer"
+      - "/home/jacobh/.local/bin/GL/gl.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GL/gl.h"
+      - "/usr/local/bin/GL/gl.h"
+      - "/usr/bin/GL/gl.h"
+      - "/usr/local/sbin/GL/gl.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GL/gl.h"
+      - "/usr/lib/jvm/default/bin/GL/gl.h"
+      - "/usr/bin/site_perl/GL/gl.h"
+      - "/usr/bin/vendor_perl/GL/gl.h"
+      - "/usr/bin/core_perl/GL/gl.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GL/gl.h"
+      - "/usr/local/include/GL/gl.h"
+      - "/usr/local/GL/gl.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:414 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_GLX_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/glx.h"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/GL/glx.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GL/glx.h"
+      - "/usr/local/bin/GL/glx.h"
+      - "/usr/bin/GL/glx.h"
+      - "/usr/local/sbin/GL/glx.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GL/glx.h"
+      - "/usr/lib/jvm/default/bin/GL/glx.h"
+      - "/usr/bin/site_perl/GL/glx.h"
+      - "/usr/bin/vendor_perl/GL/glx.h"
+      - "/usr/bin/core_perl/GL/glx.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GL/glx.h"
+      - "/usr/local/include/GL/glx.h"
+      - "/usr/local/GL/glx.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:415 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_EGL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL/egl.h"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/EGL/egl.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/EGL/egl.h"
+      - "/usr/local/bin/EGL/egl.h"
+      - "/usr/bin/EGL/egl.h"
+      - "/usr/local/sbin/EGL/egl.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/EGL/egl.h"
+      - "/usr/lib/jvm/default/bin/EGL/egl.h"
+      - "/usr/bin/site_perl/EGL/egl.h"
+      - "/usr/bin/vendor_perl/EGL/egl.h"
+      - "/usr/bin/core_perl/EGL/egl.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/EGL/egl.h"
+      - "/usr/local/include/EGL/egl.h"
+      - "/usr/local/EGL/egl.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:416 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_GLES2_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLES2/gl2.h"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/GLES2/gl2.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GLES2/gl2.h"
+      - "/usr/local/bin/GLES2/gl2.h"
+      - "/usr/bin/GLES2/gl2.h"
+      - "/usr/local/sbin/GLES2/gl2.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GLES2/gl2.h"
+      - "/usr/lib/jvm/default/bin/GLES2/gl2.h"
+      - "/usr/bin/site_perl/GLES2/gl2.h"
+      - "/usr/bin/vendor_perl/GLES2/gl2.h"
+      - "/usr/bin/core_perl/GLES2/gl2.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GLES2/gl2.h"
+      - "/usr/local/include/GLES2/gl2.h"
+      - "/usr/local/GLES2/gl2.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:417 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_GLES3_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLES3/gl3.h"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/GLES3/gl3.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GLES3/gl3.h"
+      - "/usr/local/bin/GLES3/gl3.h"
+      - "/usr/bin/GLES3/gl3.h"
+      - "/usr/local/sbin/GLES3/gl3.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GLES3/gl3.h"
+      - "/usr/lib/jvm/default/bin/GLES3/gl3.h"
+      - "/usr/bin/site_perl/GLES3/gl3.h"
+      - "/usr/bin/vendor_perl/GLES3/gl3.h"
+      - "/usr/bin/core_perl/GLES3/gl3.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GLES3/gl3.h"
+      - "/usr/local/include/GLES3/gl3.h"
+      - "/usr/local/GLES3/gl3.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:418 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_xmesa_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL/xmesa.h"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/usr/share/doc/NVIDIA_GLX-1.0/include/"
+      - "/usr/openwin/share/include/"
+      - "/opt/graphics/OpenGL/include/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/GL/xmesa.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GL/xmesa.h"
+      - "/usr/local/bin/GL/xmesa.h"
+      - "/usr/bin/GL/xmesa.h"
+      - "/usr/local/sbin/GL/xmesa.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GL/xmesa.h"
+      - "/usr/lib/jvm/default/bin/GL/xmesa.h"
+      - "/usr/bin/site_perl/GL/xmesa.h"
+      - "/usr/bin/vendor_perl/GL/xmesa.h"
+      - "/usr/bin/core_perl/GL/xmesa.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GL/xmesa.h"
+      - "/usr/local/include/GL/xmesa.h"
+      - "/usr/local/GL/xmesa.h"
+      - "/usr/include/GL/xmesa.h"
+      - "/usr/GL/xmesa.h"
+      - "/include/GL/xmesa.h"
+      - "/usr/X11R6/include/GL/xmesa.h"
+      - "/usr/X11R6/GL/xmesa.h"
+      - "/usr/pkg/include/GL/xmesa.h"
+      - "/usr/pkg/GL/xmesa.h"
+      - "/opt/include/GL/xmesa.h"
+      - "/opt/GL/xmesa.h"
+      - "/usr/include/X11/GL/xmesa.h"
+      - "/usr/share/doc/NVIDIA_GLX-1.0/include/GL/xmesa.h"
+      - "/usr/openwin/share/include/GL/xmesa.h"
+      - "/opt/graphics/OpenGL/include/GL/xmesa.h"
     found: false
     search_context:
       ENV{PATH}:
@@ -2482,14 +2744,16 @@ events:
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CTest.cmake:196 (find_program)"
-      - "CMakeLists.txt:17 (include)"
-    mode: "program"
-    variable: "COVERAGE_COMMAND"
-    description: "Path to the coverage program that CTest uses for performing coverage inspection"
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:424 (find_path)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "path"
+    variable: "OPENGL_GLU_INCLUDE_DIR"
+    description: "Path to a file."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -2499,7 +2763,7 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcov"
+      - "GL/glu.h"
     candidate_directories:
       - "/home/jacobh/.local/bin/"
       - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
@@ -2512,28 +2776,33 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
       - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
+      - "/usr/local/include/"
       - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
+      - "/usr/include/"
       - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
+      - "/include/"
+      - "/usr/X11R6/include/"
       - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
+      - "/usr/pkg/include/"
       - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
+      - "/opt/include/"
       - "/opt/"
+      - "/usr/include/X11/"
     searched_directories:
-      - "/home/jacobh/.local/bin/gcov"
-      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/gcov"
-      - "/usr/local/bin/gcov"
-    found: "/usr/bin/gcov"
+      - "/home/jacobh/.local/bin/GL/glu.h"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/GL/glu.h"
+      - "/usr/local/bin/GL/glu.h"
+      - "/usr/bin/GL/glu.h"
+      - "/usr/local/sbin/GL/glu.h"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/GL/glu.h"
+      - "/usr/lib/jvm/default/bin/GL/glu.h"
+      - "/usr/bin/site_perl/GL/glu.h"
+      - "/usr/bin/vendor_perl/GL/glu.h"
+      - "/usr/bin/core_perl/GL/glu.h"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/GL/glu.h"
+      - "/usr/local/include/GL/glu.h"
+      - "/usr/local/GL/glu.h"
+    found: "/usr/include/"
     search_context:
       ENV{PATH}:
         - "/home/jacobh/.local/bin"
@@ -2562,4 +2831,761 @@ events:
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:438 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_opengl_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "OpenGL"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libOpenGL.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:443 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_glx_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLX"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+      - "/usr/lib/"
+      - "/usr/libglvnd/"
+      - "/usr/"
+      - "/lib/libglvnd/"
+      - "/lib/"
+      - "/usr/X11R6/lib/libglvnd/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/libglvnd/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/libglvnd/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/libglvnd/"
+      - "/usr/pkg/"
+      - "/opt/lib/libglvnd/"
+      - "/opt/lib/"
+      - "/opt/libglvnd/"
+      - "/opt/"
+      - "/usr/lib/X11/libglvnd/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+    found: "/usr/lib/libGLX.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:449 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_egl_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "EGL"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+      - "/usr/lib/"
+      - "/usr/libglvnd/"
+      - "/usr/"
+      - "/lib/libglvnd/"
+      - "/lib/"
+      - "/usr/X11R6/lib/libglvnd/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/libglvnd/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/libglvnd/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/libglvnd/"
+      - "/usr/pkg/"
+      - "/opt/lib/libglvnd/"
+      - "/opt/lib/"
+      - "/opt/libglvnd/"
+      - "/opt/"
+      - "/usr/lib/X11/libglvnd/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+    found: "/usr/lib/libEGL.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:455 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_gles2_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv2"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLESv2.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:460 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_gles3_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLESv3"
+      - "GLESv2"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLESv2.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:466 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_glu_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GLU"
+      - "MesaGLU"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/opt/graphics/OpenGL/lib/"
+      - "/usr/openwin/lib/"
+      - "/usr/shlib/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libGLU.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:521 (find_library)"
+      - "build/_deps/imgui-sfml-src/CMakeLists.txt:61 (find_package)"
+    mode: "library"
+    variable: "OPENGL_gl_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+      - "MesaGL"
+    candidate_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+      - "/usr/lib/"
+      - "/usr/libglvnd/"
+      - "/usr/"
+      - "/lib/libglvnd/"
+      - "/lib/"
+      - "/usr/X11R6/lib/libglvnd/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/libglvnd/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/libglvnd/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/libglvnd/"
+      - "/usr/pkg/"
+      - "/opt/lib/libglvnd/"
+      - "/opt/lib/"
+      - "/opt/libglvnd/"
+      - "/opt/"
+      - "/usr/lib/X11/libglvnd/"
+      - "/usr/lib/X11/"
+      - "/opt/graphics/OpenGL/lib/libglvnd/"
+      - "/opt/graphics/OpenGL/lib/"
+      - "/usr/openwin/lib/libglvnd/"
+      - "/usr/openwin/lib/"
+      - "/usr/shlib/libglvnd/"
+      - "/usr/shlib/"
+    searched_directories:
+      - "/home/jacobh/.local/bin/libglvnd/"
+      - "/home/jacobh/.local/bin/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
+      - "/usr/local/bin/libglvnd/"
+      - "/usr/local/bin/"
+      - "/usr/bin/libglvnd/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/libglvnd/"
+      - "/usr/local/sbin/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/libglvnd/"
+      - "/home/jacobh/.local/share/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/libglvnd/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/libglvnd/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/libglvnd/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/libglvnd/"
+      - "/usr/bin/core_perl/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/libglvnd/"
+      - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts/"
+      - "/usr/local/lib/libglvnd/"
+      - "/usr/local/lib/"
+      - "/usr/local/libglvnd/"
+      - "/usr/local/"
+      - "/usr/lib/libglvnd/"
+    found: "/usr/lib/libGL.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.vscode-oss/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/home/jacobh/.local/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/home/jacobh/.local/share/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/jacobh/.vscode-oss/extensions/vscjava.vscode-java-debug-0.58.5-universal/bundled/scripts/noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
 ...

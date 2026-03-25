@@ -8,7 +8,7 @@ Simulation::Simulation() {}
 
 // ---- Public -------------------------------------------------------------
 
-void Simulation::update() {
+void Simulation::update(int stepsPerFrame) {
   for (int s = 0; s < stepsPerFrame; ++s) {
     // Accumulate gravity forces
     for (auto &a : bodies)
@@ -20,7 +20,7 @@ void Simulation::update() {
     for (auto &b : bodies) {
       integrate(b);
       b.trail.push_back(b.pos);
-      if (b.trail.size() > MAX_TRAIL)
+      if (b.trail.size() > maxTrail)
         b.trail.pop_front();
     }
   }
