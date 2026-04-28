@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/jacobh/Documents/Physics-Engine/build/cmake_install.cmake",
-		"/home/jacobh/Documents/Physics-Engine/build/_deps/imgui-sfml-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
