@@ -2,6 +2,7 @@ use std::f32::consts::TAU;
 
 use eframe::egui::{self, Color32, Pos2, Stroke};
 
+use crate::graph::Mode;
 use crate::motor::Motor;
 
 pub struct SceneWindow {
@@ -27,7 +28,7 @@ impl SceneWindow {
         &mut self,
         ctx: &egui::Context,
         motor: &Motor,
-        control_mode: usize,
+        control_mode: Mode,
         pos_target: f32,
     ) {
         egui::Window::new("Scene Viewer")
@@ -83,7 +84,7 @@ impl SceneWindow {
                 );
 
                 // Setpoint line (Position mode only)
-                if control_mode == 2 {
+                if control_mode == Mode::Position {
                     let sp = pos_target;
                     let sp_tip = w2s(sp.cos() * arm, sp.sin() * arm, center, scale);
                     painter.line_segment(

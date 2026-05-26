@@ -1,12 +1,20 @@
 use std::collections::VecDeque;
 
-use crate::motor::Motor;
+use crate::motor::{DriveMode, Motor};
 use crate::scene::SceneWindow;
 use eframe::egui;
 use egui_plot::{HLine, Line, LineStyle, Plot, PlotPoints};
 
-const CONTROL_MODES: &[&str] = &["Voltage", "PWM", "Position", "Velocity"];
 const LOAD_MODES: &[&str] = &["None", "Constant", "Spring", "Fan/Pump", "Pendulum"];
+
+#[derive(PartialEq, Clone, Copy, Default)]
+pub enum Mode {
+    #[default]
+    Voltage,
+    Pwm,
+    Position,
+    Velocity,
+}
 
 #[derive(PartialEq, Clone, Copy)]
 enum LoadMode {
@@ -40,8 +48,8 @@ pub struct GraphApp {
 
     motor: Motor,
 
-    control_mode_idx: usize,
-    prev_control_mode: usize,
+    control_mode: Mode,
+    prev_control_mode: Mode,
     voltage_input: f32,
     pwm_input: f32,
     pos_target: f32,
@@ -68,7 +76,7 @@ pub struct GraphApp {
 }
 
 fn trim(deque: &mut VecDeque<[f64; 2]>, min_t: f64) {
-    while deque.front().map_or(false, |p| p[0] < min_t) {
+    while deque.front().is_some_and(|p| p[0] < min_t) {
         deque.pop_front();
     }
 }
@@ -89,8 +97,8 @@ impl GraphApp {
 
             motor,
 
-            control_mode_idx: 0,
-            prev_control_mode: 0,
+            control_mode: Mode::Voltage,
+            prev_control_mode: Mode::Voltage,
             voltage_input,
             pwm_input: 0.0,
             pos_target: 0.0,
@@ -131,12 +139,10 @@ impl GraphApp {
 
     fn step_metrics(&self) -> Option<StepMetrics> {
         let step = self.step_state.as_ref()?;
-        let history = if self.control_mode_idx == 2 {
-            &self.position_history
-        } else if self.control_mode_idx == 3 {
-            &self.velocity_history
-        } else {
-            return None;
+        let history = match self.control_mode {
+            Mode::Position => &self.position_history,
+            Mode::Velocity => &self.velocity_history,
+            _ => return None,
         };
 
         let step_size = step.target - step.initial;
@@ -214,29 +220,28 @@ impl GraphApp {
     }
 
     fn apply_control(&mut self) {
-        if self.control_mode_idx != self.prev_control_mode {
+        if self.control_mode != self.prev_control_mode {
             self.motor.reset_pid();
-            self.prev_control_mode = self.control_mode_idx;
+            self.prev_control_mode = self.control_mode;
             self.step_state = None;
             self.prev_target = 0.0;
         }
 
-        match self.control_mode_idx {
-            0 => self.motor.set_voltage(self.voltage_input),
-            1 => self.motor.set_pwm(self.pwm_input),
-            2 => self.motor.set_position_target(self.pos_target.to_radians()),
-            3 => self.motor.set_velocity_target(self.vel_target),
-            _ => {}
+        match self.control_mode {
+            Mode::Voltage => self.motor.set_voltage(self.voltage_input),
+            Mode::Pwm => self.motor.set_pwm(self.pwm_input),
+            Mode::Position => self.motor.set_position_target(self.pos_target.to_radians()),
+            Mode::Velocity => self.motor.set_velocity_target(self.vel_target),
         }
 
-        if self.control_mode_idx >= 2 {
-            let target = if self.control_mode_idx == 2 {
+        if matches!(self.control_mode, Mode::Position | Mode::Velocity) {
+            let target = if self.control_mode == Mode::Position {
                 self.pos_target as f64
             } else {
                 self.vel_target as f64
             };
             if (target - self.prev_target).abs() > 3.0 {
-                let current_val = if self.control_mode_idx == 2 {
+                let current_val = if self.control_mode == Mode::Position {
                     self.motor.position().to_degrees() as f64
                 } else {
                     self.motor.velocity() as f64
@@ -257,15 +262,10 @@ impl GraphApp {
         self.time += self.dt;
 
         let t = self.time;
-        let voltage = self.motor.applied_voltage() as f64;
         let current = self.motor.current() as f64;
-        let torque = (self.motor.params.torque_constant
-            * self.motor.current()
-            * self.motor.params.gear_ratio) as f64;
-        let back_emf = (self.motor.params.back_emf_constant
-            * self.motor.params.gear_ratio
-            * self.motor.velocity()) as f64;
-        let power = voltage * current;
+        let torque = self.motor.torque() as f64;
+        let back_emf = self.motor.back_emf() as f64;
+        let power = self.motor.power() as f64;
 
         self.position_history.push_back([t, self.motor.position().to_degrees() as f64]);
         self.velocity_history.push_back([t, self.motor.velocity() as f64]);
@@ -342,15 +342,21 @@ impl eframe::App for GraphApp {
             // --- Control ---
             ui.label(egui::RichText::new("Control").strong());
             egui::ComboBox::from_label("Mode")
-                .selected_text(CONTROL_MODES[self.control_mode_idx])
+                .selected_text(match self.control_mode {
+                    Mode::Voltage => "Voltage",
+                    Mode::Pwm => "PWM",
+                    Mode::Position => "Position",
+                    Mode::Velocity => "Velocity",
+                })
                 .show_ui(ui, |ui| {
-                    for (i, name) in CONTROL_MODES.iter().enumerate() {
-                        ui.selectable_value(&mut self.control_mode_idx, i, *name);
-                    }
+                    ui.selectable_value(&mut self.control_mode, Mode::Voltage, "Voltage");
+                    ui.selectable_value(&mut self.control_mode, Mode::Pwm, "PWM");
+                    ui.selectable_value(&mut self.control_mode, Mode::Position, "Position");
+                    ui.selectable_value(&mut self.control_mode, Mode::Velocity, "Velocity");
                 });
 
-            match self.control_mode_idx {
-                0 => {
+            match self.control_mode {
+                Mode::Voltage => {
                     ui.add(
                         egui::Slider::new(
                             &mut self.voltage_input,
@@ -359,31 +365,34 @@ impl eframe::App for GraphApp {
                         .text("Voltage (V)"),
                     );
                 }
-                1 => {
+                Mode::Pwm => {
                     ui.add(
                         egui::Slider::new(&mut self.pwm_input, -1.0..=1.0)
                             .text("PWM Duty"),
                     );
                 }
-                2 => {
+                Mode::Position => {
                     ui.add(
                         egui::Slider::new(&mut self.pos_target, -720.0..=720.0)
                             .text("Target (°)"),
                     );
                 }
-                3 => {
+                Mode::Velocity => {
                     ui.add(
                         egui::Slider::new(&mut self.vel_target, -50.0..=50.0)
                             .text("Target (rad/s)"),
                     );
                 }
-                _ => {}
             }
 
-            ui.checkbox(&mut self.motor.inputs.coast_mode, "Coast Mode");
+            ui.horizontal(|ui| {
+                ui.radio_value(&mut self.motor.inputs.drive_mode, DriveMode::Normal, "Normal");
+                ui.radio_value(&mut self.motor.inputs.drive_mode, DriveMode::Coast, "Coast");
+                ui.radio_value(&mut self.motor.inputs.drive_mode, DriveMode::Brake, "Brake");
+            });
 
             // --- PID Gains + Step Response (only in closed-loop modes) ---
-            if self.control_mode_idx >= 2 {
+            if matches!(self.control_mode, Mode::Position | Mode::Velocity) {
                 ui.separator();
                 ui.label(egui::RichText::new("PID Gains").strong());
                 ui.add(egui::Slider::new(&mut self.motor.pid.kp, 0.0..=20.0).text("Kp"));
@@ -466,16 +475,9 @@ impl eframe::App for GraphApp {
             ui.label(format!("Velocity     = {:.4} rad/s", self.motor.velocity()));
             ui.label(format!("Current      = {:.4} A", self.motor.current()));
             ui.label(format!("Temperature  = {:.2} °C", self.motor.temperature()));
-            let torque = self.motor.params.torque_constant
-                * self.motor.current()
-                * self.motor.params.gear_ratio;
-            ui.label(format!("Torque       = {:.4} Nm", torque));
-            let back_emf = self.motor.params.back_emf_constant
-                * self.motor.params.gear_ratio
-                * self.motor.velocity();
-            ui.label(format!("Back-EMF     = {:.4} V", back_emf));
-            let power = self.motor.applied_voltage() * self.motor.current();
-            ui.label(format!("Power        = {:.4} W", power));
+            ui.label(format!("Torque       = {:.4} Nm", self.motor.torque()));
+            ui.label(format!("Back-EMF     = {:.4} V", self.motor.back_emf()));
+            ui.label(format!("Power        = {:.4} W", self.motor.power()));
             ui.label(format!("Load Torque  = {:.4} Nm", self.load_torque()));
             ui.separator();
 
@@ -525,13 +527,18 @@ impl eframe::App for GraphApp {
                         .text("Resistance (Ω)")
                         .logarithmic(true),
                 );
+                ui.add(
+                    egui::Slider::new(&mut self.motor.params.inductance, 0.0001..=0.1)
+                        .text("Inductance (H)")
+                        .logarithmic(true),
+                );
             });
         });
 
         egui::CentralPanel::default().show(ctx, |ui| {
             let plot_height = (ui.available_height() / 4.0) - 6.0;
 
-            let control_mode = self.control_mode_idx;
+            let control_mode = self.control_mode;
             let pos_target = self.pos_target as f64;
             let vel_target = self.vel_target as f64;
 
@@ -562,14 +569,14 @@ impl eframe::App for GraphApp {
                                 plot_ui.line(
                                     Line::new(PlotPoints::from(data.clone())).name(name),
                                 );
-                                if idx == 0 && control_mode == 2 {
+                                if idx == 0 && control_mode == Mode::Position {
                                     plot_ui.hline(
                                         HLine::new(pos_target)
                                             .name("Setpoint")
                                             .color(egui::Color32::from_rgb(220, 80, 80))
                                             .style(setpoint_style),
                                     );
-                                } else if idx == 1 && control_mode == 3 {
+                                } else if idx == 1 && control_mode == Mode::Velocity {
                                     plot_ui.hline(
                                         HLine::new(vel_target)
                                             .name("Setpoint")
@@ -583,7 +590,7 @@ impl eframe::App for GraphApp {
             }
         });
 
-        self.scene.show(ctx, &self.motor, self.control_mode_idx, self.pos_target.to_radians());
+        self.scene.show(ctx, &self.motor, self.control_mode, self.pos_target.to_radians());
 
         ctx.request_repaint();
     }

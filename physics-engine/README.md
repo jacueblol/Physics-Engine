@@ -5,9 +5,9 @@ A real-time DC motor simulator written in Rust with an interactive GUI.
 ## Features
 
 ### Motor Model
-- DC motor physics: back-EMF, winding resistance, inductance, gear ratio
+- DC motor physics: back-EMF, winding resistance, RL inductance dynamics (exact first-order solution), gear ratio
 - Current limiting and thermal simulation (Joule heating + Newton cooling)
-- Coast and brake modes
+- Drive modes: Normal, Coast (open circuit), Brake (shorted terminals — back-EMF braking)
 - Semi-implicit Euler integration
 
 ### Control Modes

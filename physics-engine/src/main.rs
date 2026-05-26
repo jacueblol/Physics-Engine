@@ -19,7 +19,7 @@ fn main() -> eframe::Result<()> {
         back_emf_constant: 0.1,
 
         resistance: 0.5,
-        inductance: 0.0,
+        inductance: 0.001,
     };
 
     let mut motor = Motor::new(params);

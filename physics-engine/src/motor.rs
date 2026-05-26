@@ -5,9 +5,19 @@ pub enum ControlMode {
     Velocity(f32),
 }
 
+#[derive(PartialEq, Clone, Copy, Default)]
+pub enum DriveMode {
+    #[default]
+    Normal,
+    /// Open circuit — no current, motor spins freely with only friction.
+    Coast,
+    /// Shorted terminals — back-EMF drives braking current through R, opposing motion.
+    Brake,
+}
+
 pub struct MotorInputs {
     mode: ControlMode,
-    pub coast_mode: bool,
+    pub drive_mode: DriveMode,
 }
 
 pub struct MotorState {
@@ -15,12 +25,6 @@ pub struct MotorState {
     position: f32,
     velocity: f32,
     temperature: f32,
-}
-
-pub struct MotorMeasurements {
-    pub position: f32,
-    pub velocity: f32,
-    pub current: f32,
 }
 
 pub struct MotorParams {
@@ -67,7 +71,7 @@ impl Motor {
         Self {
             inputs: MotorInputs {
                 mode: ControlMode::Voltage(0.0),
-                coast_mode: false,
+                drive_mode: DriveMode::Normal,
             },
 
             state: MotorState {
@@ -96,11 +100,13 @@ impl Motor {
     }
 
     pub fn applied_voltage(&self) -> f32 {
+        // Coast and brake both disconnect the external supply.
+        if matches!(self.inputs.drive_mode, DriveMode::Coast | DriveMode::Brake) {
+            return 0.0;
+        }
         match self.inputs.mode {
             ControlMode::Voltage(v) => v.clamp(-self.params.max_voltage, self.params.max_voltage),
-
             ControlMode::Pwm(duty) => duty.clamp(-1.0, 1.0) * self.params.max_voltage,
-
             ControlMode::Position(_) | ControlMode::Velocity(_) => {
                 self.pid_voltage.clamp(-self.params.max_voltage, self.params.max_voltage)
             }
@@ -141,12 +147,26 @@ impl Motor {
         // Back-EMF based on rotor speed
         let back_emf = self.params.back_emf_constant * rotor_velocity;
 
-        // Coast mode = open circuit: no current flows
-        let current = if self.inputs.coast_mode {
-            0.0
-        } else {
-            ((voltage - back_emf) / self.params.resistance)
-                .clamp(-self.params.max_current, self.params.max_current)
+        let current = match self.inputs.drive_mode {
+            DriveMode::Coast => 0.0,
+            DriveMode::Normal | DriveMode::Brake => {
+                // Brake: terminals shorted, effective_voltage = 0.
+                // Normal: use the commanded voltage.
+                // Both cases use the same RL integrator — only the driving voltage differs.
+                let effective_voltage = if matches!(self.inputs.drive_mode, DriveMode::Brake) {
+                    0.0
+                } else {
+                    voltage
+                };
+                let new_i = if self.params.inductance < 1e-6 {
+                    (effective_voltage - back_emf) / self.params.resistance
+                } else {
+                    let i_ss = (effective_voltage - back_emf) / self.params.resistance;
+                    let tau = self.params.inductance / self.params.resistance;
+                    i_ss + (self.state.current - i_ss) * (-dt / tau).exp()
+                };
+                new_i.clamp(-self.params.max_current, self.params.max_current)
+            }
         };
 
         // Motor torque reflected to output shaft: T_out = Kt × I × N
@@ -195,10 +215,6 @@ impl Motor {
         self.inputs.mode = ControlMode::Velocity(target_velocity);
     }
 
-    pub fn set_coast_mode(&mut self, coast_mode: bool) {
-        self.inputs.coast_mode = coast_mode;
-    }
-
     pub fn set_external_torque(&mut self, torque: f32) {
         self.external_torque = torque;
     }
@@ -206,14 +222,6 @@ impl Motor {
     // -------------------------
     // Measurements / getters
     // -------------------------
-
-    pub fn measurements(&self) -> MotorMeasurements {
-        MotorMeasurements {
-            position: self.state.position,
-            velocity: self.state.velocity,
-            current: self.state.current,
-        }
-    }
 
     pub fn position(&self) -> f32 {
         self.state.position
@@ -229,6 +237,18 @@ impl Motor {
 
     pub fn temperature(&self) -> f32 {
         self.state.temperature
+    }
+
+    pub fn torque(&self) -> f32 {
+        self.params.torque_constant * self.state.current * self.params.gear_ratio
+    }
+
+    pub fn back_emf(&self) -> f32 {
+        self.params.back_emf_constant * self.params.gear_ratio * self.state.velocity
+    }
+
+    pub fn power(&self) -> f32 {
+        self.applied_voltage() * self.current()
     }
 
     pub fn reset_pid(&mut self) {
