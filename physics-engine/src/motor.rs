@@ -1,3 +1,5 @@
+use crate::link::Link;
+
 pub enum ControlMode {
     Voltage(f32),
     Pwm(f32),
@@ -64,6 +66,7 @@ pub struct Motor {
     pid_voltage: f32,
 
     external_torque: f32,
+    pub link: Option<Link>,
 }
 
 impl Motor {
@@ -96,6 +99,7 @@ impl Motor {
             pid_voltage: 0.0,
 
             external_torque: 0.0,
+            link: None,
         }
     }
 
@@ -175,9 +179,11 @@ impl Motor {
         // Viscous friction at output shaft
         let friction_torque = self.params.friction_coefficient * self.state.velocity;
 
-        // Net torque; effective inertia at output shaft = J_rotor × N²
-        let net_torque = motor_torque - friction_torque - self.external_torque;
-        let effective_inertia = self.params.rotor_inertia * self.params.gear_ratio.powi(2);
+        // Net torque; effective inertia at output shaft = J_rotor × N² + J_link
+        let link_inertia = self.link.as_ref().map_or(0.0, |l| l.inertia());
+        let link_gravity = self.link.as_ref().map_or(0.0, |l| l.gravity_torque(self.state.position));
+        let net_torque = motor_torque - friction_torque - self.external_torque + link_gravity;
+        let effective_inertia = self.params.rotor_inertia * self.params.gear_ratio.powi(2) + link_inertia;
 
         let angular_acceleration = net_torque / effective_inertia;
 

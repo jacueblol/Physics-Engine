@@ -16,6 +16,12 @@ A real-time DC motor simulator written in Rust with an interactive GUI.
 - **Position** — closed-loop position control via PID
 - **Velocity** — closed-loop velocity control via PID
 
+### Rigid Link
+- Physics-coupled rigid link on the motor output shaft (first step toward a two-link arm)
+- Moment of inertia (`m·l²/3`) adds directly to effective inertia at the output shaft
+- Gravitational torque (`-m·g·(l/2)·cos(θ)`) applied automatically — motor fights gravity to hold position
+- Tunable mass, length, and width; toggle on/off at runtime
+
 ### Load Modes
 - None
 - Constant torque
@@ -27,8 +33,8 @@ A real-time DC motor simulator written in Rust with an interactive GUI.
 - Live plots: position, velocity, current, torque, back-EMF, power, temperature
 - Scrolling time window with adjustable simulation speed
 - Step response metrics: rise time, settling time, overshoot, steady-state error
-- 2D scene window animating the load in real time
-- Tunable PID gains and motor parameters in the sidebar
+- 2D scene window: link rendered as a filled rotating rectangle with pivot joint
+- Tunable PID gains, motor parameters, and link properties in the sidebar
 
 ## Building
 

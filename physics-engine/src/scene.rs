@@ -1,6 +1,4 @@
-use std::f32::consts::TAU;
-
-use eframe::egui::{self, Color32, Pos2, Stroke};
+use eframe::egui::{self, Color32, Pos2, Shape, Stroke};
 
 use crate::graph::Mode;
 use crate::motor::Motor;
@@ -84,9 +82,10 @@ impl SceneWindow {
                 );
 
                 // Setpoint line (Position mode only)
+                let display_arm = motor.link.as_ref().map_or(arm, |l| l.length);
                 if control_mode == Mode::Position {
                     let sp = pos_target;
-                    let sp_tip = w2s(sp.cos() * arm, sp.sin() * arm, center, scale);
+                    let sp_tip = w2s(sp.cos() * display_arm, sp.sin() * display_arm, center, scale);
                     painter.line_segment(
                         [center, sp_tip],
                         Stroke::new(1.5, Color32::from_rgba_premultiplied(220, 70, 70, 140)),
@@ -102,23 +101,48 @@ impl SceneWindow {
                 painter.circle_filled(center, 14.0, Color32::from_gray(75));
                 painter.circle_stroke(center, 14.0, Stroke::new(1.5, Color32::from_gray(140)));
 
-                // Rotating shaft arm
-                let angle = motor.position().rem_euclid(TAU);
-                let tip = w2s(angle.cos() * arm, angle.sin() * arm, center, scale);
+                // Rotating arm / link
+                let angle = motor.position();
+                let cos_a = angle.cos();
+                let sin_a = angle.sin();
 
-                painter.line_segment(
-                    [center, tip],
-                    Stroke::new(3.5, Color32::from_rgb(90, 160, 230)),
-                );
+                let tip_length = motor.link.as_ref().map_or(arm, |l| l.length);
 
-                // Tip indicator
-                painter.circle_filled(tip, 7.0, Color32::from_rgb(90, 160, 230));
-                painter.circle_stroke(tip, 7.0, Stroke::new(1.5, Color32::WHITE));
+                if let Some(link) = &motor.link {
+                    // Draw filled rectangle for the rigid link block
+                    let hw = link.width / 2.0;
+                    let l = link.length;
+                    // 4 corners in world space (pivot at origin)
+                    let corners = vec![
+                        w2s(-sin_a * hw,              cos_a * hw,              center, scale),
+                        w2s( cos_a * l - sin_a * hw,  sin_a * l + cos_a * hw, center, scale),
+                        w2s( cos_a * l + sin_a * hw,  sin_a * l - cos_a * hw, center, scale),
+                        w2s( sin_a * hw,              -cos_a * hw,             center, scale),
+                    ];
+                    painter.add(Shape::convex_polygon(
+                        corners,
+                        Color32::from_rgb(70, 130, 200),
+                        Stroke::new(1.5, Color32::from_rgb(140, 190, 255)),
+                    ));
+                } else {
+                    // Fallback: simple line arm
+                    let tip = w2s(cos_a * arm, sin_a * arm, center, scale);
+                    painter.line_segment(
+                        [center, tip],
+                        Stroke::new(3.5, Color32::from_rgb(90, 160, 230)),
+                    );
+                    painter.circle_filled(tip, 7.0, Color32::from_rgb(90, 160, 230));
+                    painter.circle_stroke(tip, 7.0, Stroke::new(1.5, Color32::WHITE));
+                }
 
-                // Angle label offset from tip
+                // Pivot joint pin (always drawn on top)
+                painter.circle_filled(center, 5.0, Color32::from_gray(200));
+                painter.circle_stroke(center, 5.0, Stroke::new(1.5, Color32::WHITE));
+
+                // Angle label at tip
                 let label_pos = w2s(
-                    angle.cos() * (arm + 0.18),
-                    angle.sin() * (arm + 0.18),
+                    cos_a * (tip_length + 0.18),
+                    sin_a * (tip_length + 0.18),
                     center,
                     scale,
                 );

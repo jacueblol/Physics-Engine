@@ -1,8 +1,10 @@
 pub mod graph;
+pub mod link;
 pub mod motor;
 pub mod scene;
 
 use graph::GraphApp;
+use link::Link;
 use motor::{Motor, MotorParams};
 
 fn main() -> eframe::Result<()> {
@@ -24,6 +26,7 @@ fn main() -> eframe::Result<()> {
 
     let mut motor = Motor::new(params);
 
+    motor.link = Some(Link { mass: 0.5, length: 1.0, width: 0.1 });
     motor.set_voltage(12.0);
 
     let options = eframe::NativeOptions::default();

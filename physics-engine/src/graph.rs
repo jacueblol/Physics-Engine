@@ -1,5 +1,6 @@
 use std::collections::VecDeque;
 
+use crate::link::Link;
 use crate::motor::{DriveMode, Motor};
 use crate::scene::SceneWindow;
 use eframe::egui;
@@ -60,6 +61,11 @@ pub struct GraphApp {
 
     scene: SceneWindow,
 
+    link_enabled: bool,
+    link_mass: f32,
+    link_length: f32,
+    link_width: f32,
+
     load_mode: LoadMode,
     load_torque_val: f32,
     spring_k: f32,
@@ -108,6 +114,11 @@ impl GraphApp {
             prev_target: 0.0,
 
             scene: SceneWindow::new(),
+
+            link_enabled: true,
+            link_mass: 0.5,
+            link_length: 1.0,
+            link_width: 0.1,
 
             load_mode: LoadMode::None,
             load_torque_val: 0.0,
@@ -255,6 +266,16 @@ impl GraphApp {
             }
         }
         self.motor.set_external_torque(self.load_torque());
+
+        self.motor.link = if self.link_enabled {
+            Some(Link {
+                mass: self.link_mass,
+                length: self.link_length,
+                width: self.link_width,
+            })
+        } else {
+            None
+        };
     }
 
     fn simulate_step(&mut self) {
@@ -479,6 +500,26 @@ impl eframe::App for GraphApp {
             ui.label(format!("Back-EMF     = {:.4} V", self.motor.back_emf()));
             ui.label(format!("Power        = {:.4} W", self.motor.power()));
             ui.label(format!("Load Torque  = {:.4} Nm", self.load_torque()));
+            ui.separator();
+
+            // --- Link ---
+            ui.label(egui::RichText::new("Link").strong());
+            ui.checkbox(&mut self.link_enabled, "Enable Link");
+            if self.link_enabled {
+                ui.add(
+                    egui::Slider::new(&mut self.link_mass, 0.01..=10.0)
+                        .text("Mass (kg)")
+                        .logarithmic(true),
+                );
+                ui.add(
+                    egui::Slider::new(&mut self.link_length, 0.1..=3.0)
+                        .text("Length (m)"),
+                );
+                ui.add(
+                    egui::Slider::new(&mut self.link_width, 0.02..=0.5)
+                        .text("Width (m)"),
+                );
+            }
             ui.separator();
 
             // --- Motor Parameters ---
