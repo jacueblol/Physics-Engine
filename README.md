@@ -2,6 +2,8 @@
 
 > A real-time DC motor simulator written in Rust with an interactive GUI.
 
+![screenshot](screenshot.png)
+
 ---
 
 ## Features
